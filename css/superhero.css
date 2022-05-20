@@ -1,0 +1,166 @@
+:root {
+  --sshRed: #e21717;
+}
+body {
+  background: #000;
+  color: white;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+#bodyContainer {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  height: 100vh;
+  display: none;
+}
+
+/* LOADING CSS */
+#loader {
+  font-size: 30px;
+}
+
+/* LOADING CSS */
+
+/* SUPERHERO INFO DISPLAY CSS */
+.superHeroContainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.superHeroImage {
+  flex: 0.3;
+  width: 99%;
+  height: 99%;
+}
+.superHeroInfoContainer {
+  flex: 0.7;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0 0 0 40px;
+  margin-right: 20px;
+  flex-direction: column;
+}
+#superHeroImage {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  margin-left: 20px;
+}
+.heronameContainer {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#favIcon {
+  margin-right: 30px;
+}
+#favIconRed {
+  margin-right: 30px;
+  display: none;
+}
+#heroName {
+  font-size: 45px;
+  font-weight: 600;
+}
+.heroInfoContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+  height: 100%;
+}
+.infoCategories {
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 200;
+  font-size: 25px;
+}
+.info {
+  padding: 5px;
+  cursor: pointer;
+}
+.infoActive,
+.info:hover {
+  border-bottom: 2px solid #4dd637;
+}
+.infoActiveBad,
+.infoBad:hover {
+  border-bottom: 2px solid var(--sshRed);
+}
+
+/* SUPERHERO INFO DISPLAY CSS */
+/* POWERSTATS CSS */
+
+#powerStatsContainer {
+  height: max-content;
+  max-height: 98%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 35px;
+}
+.powerinfo {
+  margin-bottom: 20px;
+  width: 90%;
+  height: 40px;
+  padding: 3px 0;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.powernameContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.powerProgress {
+  width: 95%;
+  margin-left: 5px;
+}
+.progressBar {
+  margin-top: 3px;
+  height: 7px;
+  border-radius: 7px;
+  background: #4dd637;
+}
+.progressBarBad {
+  background: var(--sshRed);
+}
+/* POWERSTATS CSS */
+/* Biography CSS */
+
+#biographyContainer {
+  padding-top: 25px;
+  display: none;
+}
+.bioTagContainer {
+  margin-top: 25px;
+}
+.tag {
+  font-size: 25px;
+  font-weight: 600;
+  color: #4dd637;
+}
+.tagBad {
+  color: var(--sshRed);
+}
+.tagVal {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 400;
+}
+/* Biography CSS */

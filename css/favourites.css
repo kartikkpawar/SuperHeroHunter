@@ -1,0 +1,83 @@
+:root {
+  --sshRed: #e21717;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #000;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.bodyContainer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: 400;
+}
+/* FAV CONTIANER CSS */
+#alert {
+  margin-top: 10%;
+  font-size: 30px;
+}
+#favsContainer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.fav {
+  height: 150px;
+  width: 32%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--sshRed);
+  border-radius: 15px;
+  margin-top: 15px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.favDetails {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+.favImage {
+  height: 100%;
+}
+.favHeroInfoContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+.favName {
+  font-size: 22px;
+  font-weight: 600;
+}
+.favRealName {
+  font-size: 18px;
+
+  font-weight: 400;
+}
+.favGender {
+  font-size: 18px;
+  font-weight: 200;
+}
+.favIconRed {
+  color: var(--sshRed);
+}
+/* FAV CONTIANER CSS */

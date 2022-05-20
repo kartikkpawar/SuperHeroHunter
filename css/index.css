@@ -1,0 +1,106 @@
+:root {
+  --sshRed: #e21717;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-image: url("../assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.bodyContainer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.bannerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 60%;
+}
+.title {
+  margin-top: 10px;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+#hero {
+  margin-left: 5px;
+}
+#hunter {
+  margin-left: 5px;
+  color: var(--sshRed);
+}
+.searchBarContainer {
+  margin-top: 10px;
+  border: 2px solid var(--sshRed);
+  width: 60%;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  padding: 5px 20px 5px 20px;
+  justify-content: space-between;
+  position: relative;
+}
+#searchbar {
+  border: none;
+  width: 90%;
+  font-size: 30px;
+  padding: 1px;
+  background: none;
+  color: white;
+}
+#searchbar:focus {
+  outline: none;
+  border: none;
+}
+.searchIcon {
+  font-size: 40px;
+}
+#searchResultContainer {
+  position: absolute;
+  padding: 3px;
+  max-height: 200px;
+  border: 5px soild red;
+  width: 95%;
+  background: white;
+  top: 50px;
+  overflow-y: scroll;
+  display: none;
+}
+.searchResult {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.serachHeroImage {
+  height: 70px;
+  width: 40px;
+}
+.searchHeroName {
+  margin-left: 15px;
+  color: var(--sshRed);
+  font-weight: 600;
+}
+#favButton {
+  margin-top: 10px;
+  border: none;
+  background: var(--sshRed);
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}

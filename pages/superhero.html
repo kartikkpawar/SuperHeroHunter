@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super hero name</title>
+    <link rel="stylesheet" href="../css/superhero.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <script src="../js/superhero.js" defer></script>
+</head>
+
+<body>
+    <!-- loader -->
+    <div id="loader">LOADING.....</div>
+
+    <div id="bodyContainer">
+
+        <div class="superHeroContainer">
+            <div class="superHeroImage">
+                <img src="" alt=" superHeroImage" id="superHeroImage">
+            </div>
+            <div class="superHeroInfoContainer">
+                <div class="heronameContainer">
+                    <span id="heroName"></span>
+                    <i class='bx bx-heart bx-sm ' id="favIcon"></i>
+                    <i class='bx bxs-heart bx-sm ' id="favIconRed"></i>
+                </div>
+                <div class="heroInfoContainer">
+                    <div class="infoCategories">
+                        <!-- different Tabs to switch -->
+                        <span id="cat1" class="info infoActive">POWERSTATS</span>
+                        <span id="cat2" class="info">BIOGRAPHY</span>
+
+                    </div>
+                    <!-- TAB 1 -->
+                    <div id="powerStatsContainer">
+                        <div class="intelligence powerinfo">
+                            <i class='bx bx-shield-alt-2 bx-sm'></i>
+                            <div class="powerProgress">
+                                <div class="powernameContainer">
+                                    <span class="powerName">Intelligence</span>
+                                    <span class="powerPercents" id="intPer">100%</span>
+                                </div>
+                                <div id="intelligenceProgress" class="progressBar"></div>
+                            </div>
+                        </div>
+                        <div class="strenght powerinfo">
+                            <i class='bx bx-shield-alt-2 bx-sm'></i>
+                            <div class="powerProgress">
+                                <div class="powernameContainer">
+                                    <span class="powerName">Strenght</span>
+                                    <span class="powerPercents" id="strPer">100%</span>
+                                </div>
+                                <div id="strenghtProgress" class="progressBar"></div>
+                            </div>
+                        </div>
+                        <div class="speed powerinfo">
+                            <i class='bx bx-shield-alt-2 bx-sm'></i>
+                            <div class="powerProgress">
+                                <div class="powernameContainer">
+                                    <span class="powerName">Speed</span>
+                                    <span class="powerPercents" id="speedPer">100%</span>
+                                </div>
+                                <div id="speedProgress" class="progressBar"></div>
+                            </div>
+                        </div>
+                        <div class="durability powerinfo">
+                            <i class='bx bx-shield-alt-2 bx-sm'></i>
+                            <div class="powerProgress">
+                                <div class="powernameContainer">
+                                    <span class="powerName">Durability</span>
+                                    <span class="powerPercents" id="durPer">100%</span>
+                                </div>
+                                <div id="durabilityProgress" class="progressBar"></div>
+                            </div>
+                        </div>
+                        <div class="power powerinfo">
+                            <i class='bx bx-shield-alt-2 bx-sm'></i>
+                            <div class="powerProgress">
+                                <div class="powernameContainer">
+                                    <span class="powerName">Power</span>
+                                    <span class="powerPercents" id="powPer">100%</span>
+                                </div>
+                                <div id="powerProgress" class="progressBar"></div>
+                            </div>
+                        </div>
+                        <div class="combat powerinfo">
+                            <i class='bx bx-shield-alt-2 bx-sm'></i>
+                            <div class="powerProgress">
+                                <div class="powernameContainer">
+                                    <span class="powerName">Combat</span>
+                                    <span class="powerPercents" id="comPer">100%</span>
+                                </div>
+                                <div id="combatProgress" class="progressBar"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- TAB 2 -->
+
+                    <div id="biographyContainer">
+                        <div class="bioTagContainer">
+                            <span class="tag">Full Name :</span>
+                            <span class="tagVal" id="name"></span>
+                        </div>
+                        <div class="bioTagContainer">
+                            <span class="tag">Alter Egos :</span>
+                            <span class="tagVal" id="alterEgo"></span>
+                        </div>
+                        <div class="bioTagContainer">
+                            <span class="tag">Aliases :</span>
+                            <span class="tagVal" id="aliases"></span>
+                        </div>
+                        <div class="bioTagContainer">
+                            <span class="tag">Place of birth :</span>
+                            <span class="tagVal" id="pob"></span>
+                        </div>
+                        <div class="bioTagContainer">
+                            <span class="tag">First Appearacne :</span>
+                            <span class="tagVal" id="fa"></span>
+                        </div>
+                        <div class="bioTagContainer">
+                            <span class="tag">Publisher :</span>
+                            <span class="tagVal" id="publisher"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
