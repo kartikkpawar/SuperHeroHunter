@@ -14,6 +14,7 @@ input.addEventListener("keyup", async (event) => {
   warningText.style.display = "none";
   const res = await searchApiCall(input.value.replace(" ", "%20"));
   if (res.response == "error") return;
+  searchResultContainer.innerHTML = "";
   res?.results?.forEach((hero) => {
     searchResultContainer.appendChild(resultBuilder(hero));
   });
