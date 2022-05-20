@@ -39,6 +39,7 @@ const favDivCreater = (favs) => {
 
   //   Setting onclick listners
   heartIcon.addEventListener("click", (e) => {
+    e.stopPropagation();
     const array = JSON.parse(localStorage.getItem("ssh-fav"));
     const favsA = array.filter((fav) => fav.id != favs.id);
     localStorage.setItem("ssh-fav", JSON.stringify(favsA));
