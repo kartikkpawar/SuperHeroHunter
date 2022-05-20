@@ -1,4 +1,4 @@
-# [Superhero Hunter(SHH)](https://marvelous-daifuku-902a81.netlify.app/)
+# [Superhero Hunter(SHH)](https://main--marvelous-daifuku-902a81.netlify.app/)
 
 
 Superhero hunter powered by superhero api;
